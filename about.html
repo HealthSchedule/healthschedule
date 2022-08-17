@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - HealthSchedule - Coming Soon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
+<script src="https://kit.fontawesome.com/1fed5ac458.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/logafull.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="careers.html">CAREERS</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+        <h1>About Us</h1>
+        <p>Trying to book a specialist healthcare appointment is way harder than it should be. Our founder knows that first hand, having been through the stress and frustration of navigating multitudes of websites, voicemails and inboxes without ever feeling closer to getting help.</p>
+        <p>HealthSchedule was created in order to change that.</p>
+        <p>Being non technical (but enthusiastic) and having never touched a code editor until August 2022, the founder has strung this website together with YouTube tutorials and good vibes. It's been a great learning experience, and all feedback and suggestions (both functional and aesthetic) are most welcome while we recruit some technical and design talent!</p>
+        <a href="" class="hero-btn" onclick="href='contact.html'">Stay Tuned For Updates!</a>
+    </div>
+   </section>
+   
+
+<!--JavaScript for Toggle Menu--> 
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+
+
+
+</html>
